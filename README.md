@@ -7,3 +7,9 @@ This repository contains workflow to analyse the logs and generate incident repo
 2. Extracting status codes with `awk`. 
 3. Counting the number of "404 Not Found" errors.
 4. Determining the failure rate percentage.
+
+## Cleaning the Data
+The log -`web_server.log` is difficult to process because every field is wrapped in double quotes (`"`).
+### Steps
+- `clean-log.sh` takes `web_server.log` as an argument.
+- Removes all instances of `"` and saves the processed log as `clean.log`.
