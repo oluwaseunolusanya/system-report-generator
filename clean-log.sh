@@ -2,6 +2,6 @@
 
 # Remove all instances of " from the server log
 # s
-LOG=$1
+LOG_FILE=$1
 CLEAN_LOG="clean.log"
-sed 's/"//g' $LOG_FILE >  $CLEAN_LOG
+sed 's/"//g' $LOG_FILE >> $CLEAN_LOG
